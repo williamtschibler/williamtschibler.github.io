@@ -1,0 +1,33 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+    title: string;
+    category: string;
+    summary: string;
+    tools: string[];
+}
+
+const { title, category, summary, tools } = Astro.props;
+---
+
+<BaseLayout
+    title={`${title} | William Schibler`}
+    description={summary}
+>
+    <section class="page-hero">
+        <div class="page-container">
+            <p class="eyebrow">{category}</p>
+            <h1>{title}</h1>
+            <p class="page-intro">{summary}</p>
+
+            <div class="tag-list" aria-label="Project tools">
+                {tools.map((tool) => <span class="tag">{tool}</span>)}
+            </div>
+        </div>
+    </section>
+
+    <article class="section article-content">
+        <slot />
+    </article>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+const pathname = Astro.url.pathname;
+
+const links = [
+    { href: "/", label: "Home" },
+    { href: "/about/", label: "About" },
+    { href: "/projects/", label: "Projects" },
+    { href: "/contact/", label: "Contact" },
+];
+
+const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+---
+
+<header class="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+        <a class="logo" href="/" aria-label="William Schibler homepage">WS</a>
+
+        <div class="nav-links">
+            {
+                links.map((link) => (
+                    <a
+                        href={link.href}
+                        class:list={{ active: isActive(link.href) }}
+                    >
+                        {link.label}
+                    </a>
+                ))
+            }
+        </div>
+    </nav>
+</header>
