@@ -3,24 +3,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Contact | William Schibler">
-    <section class="page-hero">
-        <div class="page-container">
-            <p class="eyebrow">Contact</p>
-            <h1>Let’s connect.</h1>
-            <p class="page-intro">
-                This page will contain your professional email,
-                LinkedIn profile, GitHub profile, and résumé.
-            </p>
-        </div>
-    </section>
 
-    <section class="section">
-        <div class="contact-card">
-            <h2>Contact information</h2>
-            <p>
-                We will add your real links after confirming the page structure
-                and deciding what information you want publicly visible.
-            </p>
-        </div>
-    </section>
+<section class="page-hero info-page-hero contact-hero">
+    <div class="page-container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let’s connect.</h1>
+
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="contact-grid">
+
+      <article>
+        <p class="eyebrow">Email</p>
+        <h2>schibler.w@northeastern.edu</h2>
+        <a
+          class="text-link"
+          href="mailto:schibler.w@northeastern.edu"
+        >
+          Send email →
+        </a>
+      </article>
+
+      <article>
+  <p class="eyebrow">LinkedIn</p>
+  <h2>
+    <a
+      class="text-link"
+      href="https://www.linkedin.com/in/william-schibler/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      https://www.linkedin.com/in/william-schibler/
+    </a>
+  </h2>
+</article>
+
+      <article>
+        <p class="eyebrow">GitHub</p>
+        <h2>Code and website</h2>
+      </article>
+
+      <article>
+        <p class="eyebrow">Location</p>
+        <h2>Boston, Massachusetts</h2>
+      </article>
+
+    </div>
+  </section>
+
 </BaseLayout>

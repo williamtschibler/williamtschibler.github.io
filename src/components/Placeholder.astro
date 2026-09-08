@@ -1,0 +1,9 @@
+---
+interface Props { title: string; prompt: string; image?: boolean; }
+const { title, prompt, image = false } = Astro.props;
+---
+<section class:list={["placeholder", {"image-placeholder": image}]}>
+  <p class="placeholder-label">CONTENT PLACEHOLDER</p>
+  <h3>{title}</h3>
+  <p>{prompt}</p>
+</section>

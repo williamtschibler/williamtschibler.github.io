@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 760" role="img" aria-labelledby="title desc">
+<title id="title">Earth horizon and compressor blueprint</title>
+<desc id="desc">A dark aerospace background with a glowing Earth horizon, stars, and a technical compressor drawing in the upper right.</desc>
+
+<defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#020713"/>
+        <stop offset="58%" stop-color="#07172d"/>
+        <stop offset="100%" stop-color="#0b2a4f"/>
+    </linearGradient>
+
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="12%" stop-color="#dff4ff" stop-opacity="0.98"/>
+        <stop offset="35%" stop-color="#62baff" stop-opacity="0.65"/>
+        <stop offset="100%" stop-color="#2d8ddb" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#20558d"/>
+        <stop offset="20%" stop-color="#102f56"/>
+        <stop offset="100%" stop-color="#030916"/>
+    </linearGradient>
+
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur stdDeviation="13"/>
+    </filter>
+
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur stdDeviation="4"/>
+    </filter>
+
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+        <path d="M 52 0 L 0 0 0 52" fill="none" stroke="#67b8ff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="earthClip">
+        <ellipse cx="980" cy="1035" rx="1050" ry="570"/>
+    </clipPath>
+</defs>
+
+<rect width="1800" height="760" fill="url(#sky)"/>
+<rect width="1800" height="760" fill="url(#grid)" opacity="0.8"/>
+
+<!-- Stars -->
+<g fill="#ffffff">
+    <circle cx="115" cy="122" r="1.2" opacity="0.75"/>
+    <circle cx="210" cy="68" r="1.1" opacity="0.45"/>
+    <circle cx="345" cy="148" r="1.4" opacity="0.65"/>
+    <circle cx="482" cy="93" r="1" opacity="0.48"/>
+    <circle cx="610" cy="166" r="1.1" opacity="0.55"/>
+    <circle cx="748" cy="77" r="1.3" opacity="0.72"/>
+    <circle cx="890" cy="130" r="1" opacity="0.5"/>
+    <circle cx="1045" cy="88" r="1.2" opacity="0.66"/>
+    <circle cx="1215" cy="137" r="1" opacity="0.48"/>
+    <circle cx="1390" cy="76" r="1.1" opacity="0.68"/>
+    <circle cx="1560" cy="146" r="1.2" opacity="0.5"/>
+    <circle cx="1700" cy="92" r="1.1" opacity="0.72"/>
+</g>
+
+<!-- Earth -->
+<ellipse cx="980" cy="1035" rx="1050" ry="570" fill="url(#earth)" stroke="#84ccff" stroke-width="3"/>
+<ellipse cx="980" cy="1035" rx="1052" ry="573" fill="none" stroke="#55b3ff" stroke-width="13" opacity="0.25" filter="url(#glow)"/>
+<ellipse cx="980" cy="1035" rx="1050" ry="570" fill="none" stroke="#cdefff" stroke-width="2" opacity="0.82"/>
+
+<!-- City-light clusters clipped to Earth -->
+<g clip-path="url(#earthClip)" fill="#ffc56d">
+    <circle cx="520" cy="575" r="2.2" opacity="0.85"/>
+    <circle cx="550" cy="590" r="1.5" opacity="0.78"/>
+    <circle cx="600" cy="565" r="1.7" opacity="0.72"/>
+    <circle cx="655" cy="600" r="2" opacity="0.88"/>
+    <circle cx="715" cy="582" r="1.6" opacity="0.75"/>
+    <circle cx="760" cy="615" r="2.2" opacity="0.84"/>
+    <circle cx="820" cy="590" r="1.8" opacity="0.7"/>
+    <circle cx="880" cy="625" r="2.1" opacity="0.85"/>
+    <circle cx="945" cy="598" r="1.7" opacity="0.78"/>
+    <circle cx="1010" cy="635" r="2.2" opacity="0.88"/>
+    <circle cx="1085" cy="608" r="1.6" opacity="0.72"/>
+    <circle cx="1160" cy="638" r="2" opacity="0.8"/>
+    <circle cx="1240" cy="604" r="1.7" opacity="0.7"/>
+    <circle cx="1320" cy="632" r="2.1" opacity="0.82"/>
+    <circle cx="1410" cy="600" r="1.6" opacity="0.7"/>
+    <circle cx="1490" cy="624" r="2.1" opacity="0.82"/>
+</g>
+
+<!-- Sunrise -->
+<circle cx="930" cy="423" r="95" fill="url(#sun)" opacity="0.95"/>
+<circle cx="930" cy="423" r="8" fill="#ffffff"/>
+<path d="M840 423 H1020" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2" filter="url(#smallGlow)"/>
+
+<!-- Simplified compressor blueprint -->
+<g transform="translate(1120 68)" fill="none" stroke="#4aaeff" stroke-width="2" opacity="0.82">
+    <ellipse cx="118" cy="126" rx="74" ry="100"/>
+    <ellipse cx="118" cy="126" rx="47" ry="67"/>
+    <ellipse cx="118" cy="126" rx="13" ry="18"/>
+    <path d="M118 26 L485 62"/>
+    <path d="M118 226 L485 192"/>
+    <path d="M192 39 L192 212"/>
+    <path d="M255 46 L255 206"/>
+    <path d="M325 52 L325 200"/>
+    <path d="M390 57 L390 196"/>
+    <path d="M485 62 Q535 85 548 127 Q535 170 485 192"/>
+    <ellipse cx="485" cy="127" rx="63" ry="65"/>
+    <ellipse cx="485" cy="127" rx="37" ry="39"/>
+    <path d="M118 26 C180 60 180 192 118 226"/>
+    <path d="M192 39 C235 74 235 177 192 212"/>
+    <path d="M255 46 C292 78 292 175 255 206"/>
+    <path d="M325 52 C354 82 354 169 325 200"/>
+    <path d="M390 57 C417 86 417 166 390 196"/>
+    <path d="M82 57 L154 195"/>
+    <path d="M68 82 L168 170"/>
+    <path d="M62 112 L174 140"/>
+    <path d="M62 140 L174 112"/>
+    <path d="M68 170 L168 82"/>
+    <path d="M82 195 L154 57"/>
+</g>
+
+<!-- Technical rings -->
+<g transform="translate(1530 315)" fill="none" stroke="#4aaeff" opacity="0.28">
+    <circle cx="0" cy="0" r="126"/>
+    <circle cx="0" cy="0" r="86"/>
+    <circle cx="0" cy="0" r="42"/>
+    <path d="M-150 0 H150 M0 -150 V150"/>
+</g>
+</svg>

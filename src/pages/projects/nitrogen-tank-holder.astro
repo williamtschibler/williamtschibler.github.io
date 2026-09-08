@@ -3,51 +3,87 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 ---
 
 <ProjectLayout
-  title="Liquid Rocket Engine Team"
-  category="Propulsion · Experimental Systems"
-  summary="Hands-on test, hardware, and instrumentation work for a student liquid-rocket-engine program."
-  tools={["Test Operations", "CAD", "Hardware Integration"]}
+  title="Hot Fire Test Stand Nitrogen Tank Holder"
+  category="Mechanical Design · CAD · Assembly"
+  status="Completed"
+  summary="A two-person hardware project involving measurements, CAD modeling, hardware selection, ordering, and installation on a rocket-engine test stand."
+  tools={["SolidWorks", "Water Jet", "Hand Tools"]}
+  team="Two-person project"
 >
   <div class="case-study-page">
     <section class="case-study-card context-card">
-      <div class="context-icon-slot" aria-label="Left context icon placeholder"><span>ICON</span></div>
+      <div class="context-icon-slot" aria-label="Nitrogen tank pressure system icon">
+        <img
+          src="/images/projects/nitrogen-tank-holder/nitrogen_tank_and_pressure_gauge_icon.png"
+          alt=""
+        />
+      </div>
 
       <div class="context-copy">
-        <h2>Team and System Context</h2>
+        <h2>Project Context</h2>
         <p>
-          Introduce the liquid-rocket-engine program, test system, and the purpose of the hardware and operations work you supported while keeping restricted team information off the public portfolio.
+          In conducting water flow tests and general hotfires, the AerospaceNU: Liquid Rocket Engine team
+          pressurizes their flow system with a nitrogen tank. After the gas goes through a valve, it is contained in 
+          a custom metal nitrogen tank. That tank can reach up to 1000 psig! It needed to be securely fastened to the test stand in 
+          a convenient but safe manner.
         </p>
       </div>
 
-      <div class="context-icon-slot" aria-label="Right context icon placeholder"><span>ICON</span></div>
+      <div class="context-icon-slot" aria-label="Nitrogen tank mounting system icon">
+        <img
+          src="/images/projects/nitrogen-tank-holder/blue_nitrogen_tank_test_stand_icon.png"
+          alt=""
+        />
+      </div>
     </section>
+
     <section class="case-study-card split-card">
       <div class="section-copy">
-        <h2>Test Operations and Procedures</h2>
+        <h2>Design Constraints and Measurement Process</h2>
         <p>
-          Describe your involvement in test preparation, readiness checks, procedures, operations training, and the safety practices required around propulsion testing.
+          A nitrogen tank needed to be fixed onto the stand in such a way that
+          it wouldn't interfere with other parts of the flow system or pose any 
+          safety hazards. After pitching some ideas to our team lead, 
+          my partner and I got approval for an idea and began sketching it out.
         </p>
         <p>
-          Focus on the engineering responsibilities you can share publicly rather than sensitive engine-specific operating details.
+          After sketching our design, we took measurements of the nitrogen tank and the beams 
+          that would be supporting the tank fixtures. After taking and applying those measurements  
+          to the sketch, we double-checked each other's measurements, and once the measurements were verified, 
+          we began 3D modeling the final concept for the leader's approval.
         </p>
       </div>
 
       <div class="carousel" data-carousel>
         <div class="carousel-frame">
           <div class="carousel-slide is-active" data-slide>
-            <div class="carousel-placeholder">Test operations image 1</div>
-          </div>
-          <div class="carousel-slide" data-slide>
-            <div class="carousel-placeholder">Procedure / readiness image 2</div>
-          </div>
-          <div class="carousel-slide" data-slide>
-            <div class="carousel-placeholder">Test stand image 3</div>
+            <img
+              src="/images/projects/nitrogen-tank-holder/tankimageisometric.png"
+              alt="Isometric CAD view of the nitrogen tank"
+            />
+            <div class="carousel-caption">Isometric Tank CAD View</div>
           </div>
 
-          <button class="carousel-arrow previous" type="button" data-previous aria-label="Previous test operations image">
+          <div class="carousel-slide" data-slide>
+            <img
+              src="/images/projects/nitrogen-tank-holder/tankimagefront.png"
+              alt="Front CAD view of the nitrogen tank"
+            />
+            <div class="carousel-caption">Front Tank CAD View</div>
+          </div>
+
+          <div class="carousel-slide" data-slide>
+            <img
+              src="/images/projects/nitrogen-tank-holder/tankimageside.png"
+              alt="Side CAD view of the nitrogen tank"
+            />
+            <div class="carousel-caption">Side Tank CAD View</div>
+          </div>
+
+          <button class="carousel-arrow previous" type="button" data-previous aria-label="Previous design and measurement image">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
           </button>
-          <button class="carousel-arrow next" type="button" data-next aria-label="Next test operations image">
+          <button class="carousel-arrow next" type="button" data-next aria-label="Next design and measurement image">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
           </button>
         </div>
@@ -59,23 +95,40 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
         </div>
       </div>
     </section>
+
     <section class="case-study-card split-card reverse-card">
       <div class="carousel" data-carousel>
         <div class="carousel-frame">
           <div class="carousel-slide is-active" data-slide>
-            <div class="carousel-placeholder">Hardware integration image 1</div>
-          </div>
-          <div class="carousel-slide" data-slide>
-            <div class="carousel-placeholder">Test-stand hardware image 2</div>
-          </div>
-          <div class="carousel-slide" data-slide>
-            <div class="carousel-placeholder">Assembly image 3</div>
+            <img
+              class="rotate-clockwise"
+              src="/images/projects/nitrogen-tank-holder/topplateimage.png"
+              alt="CAD view of the nitrogen tank top plate"
+            />
+            <div class="carousel-caption">Top Plate CAD Front View</div>
           </div>
 
-          <button class="carousel-arrow previous" type="button" data-previous aria-label="Previous hardware integration image">
+          <div class="carousel-slide" data-slide>
+            <img
+              class="rotate-clockwise"
+              src="/images/projects/nitrogen-tank-holder/bottomplateimage.png"
+              alt="CAD view of the nitrogen tank bottom plate"
+            />
+            <div class="carousel-caption">Bottom Plate CAD Front View</div>
+          </div>
+
+          <div class="carousel-slide" data-slide>
+            <img
+              src="/images/projects/nitrogen-tank-holder/tankfullassembly.png"
+              alt="Full CAD assembly of the nitrogen tank and support plates"
+            />
+            <div class="carousel-caption">Full CAD Assembly</div>
+          </div>
+
+          <button class="carousel-arrow previous" type="button" data-previous aria-label="Previous CAD and material image">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
           </button>
-          <button class="carousel-arrow next" type="button" data-next aria-label="Next hardware integration image">
+          <button class="carousel-arrow next" type="button" data-next aria-label="Next CAD and material image">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
           </button>
         </div>
@@ -88,42 +141,67 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
       </div>
 
       <div class="section-copy">
-        <h2>Hardware Integration and Test-Stand Work</h2>
+        <h2>CAD Development and Material Selection</h2>
         <p>
-          Document the fittings, test-stand hardware, mechanical integration, installation work, or troubleshooting tasks you completed or supported.
+          Using SolidWorks, my teammate constructed the CAD designs that 
+          we had measured for our tank supports while I researched aluminum sheets and pricing. 
+          When showing the leader our initial designs and material costs, he asked us to find a way to lower 
+          the price. Consequently, we redid some of our measurements and managed to reduce our required material volume
+          by 72 in³.
         </p>
         <p>
-          Explain how measurements, fit checks, hardware selection, and coordination with the larger system influenced the work.
+          With our materials selected, we ordered several nuts, bolts, washers, and spacers for specific parts of 
+          the support frame from McMaster. The diameter of all the bolts, nuts, and washers was the same, but 
+          since the infrastructure varied across the different support points, the length of the bolts differed greatly.
+          The variations also made the non-threaded spacers necessary.
         </p>
       </div>
     </section>
+
     <section class="case-study-card split-card">
       <div class="section-copy">
-        <h2>Instrumentation and Development Work</h2>
+        <h2>Fabrication and Assembly</h2>
         <p>
-          Describe shareable instrumentation or development work, including the cryogenic level-sensor concept where appropriate.
-        </p>
-        <p>
-          Explain the engineering problem, your contribution to the concept or implementation, and how the work connected to future test capability.
+          Once the different parts were ordered and delivered, it was 
+          my job to waterjet the aluminum pieces. Taking my partner's 3D model, 
+          I generated a design to cut out the aluminum sheet into our desired frames. 
+          However, after cutting and attempting to install the frame, I found that the holes in the tank 
+          and the supports were misaligned because I did not double-check my partner's 3D model. 
+          Consequently, I had to make measurements by hand to drill new holes. 
+          After doing this, my partner and I used the frame alignment to drill matching holes 
+          into the steel structure and then install the tank and supports using the ordered bolts, 
+          nuts, washers, and spacers.
         </p>
       </div>
 
       <div class="carousel" data-carousel>
         <div class="carousel-frame">
           <div class="carousel-slide is-active" data-slide>
-            <div class="carousel-placeholder">Instrumentation image 1</div>
-          </div>
-          <div class="carousel-slide" data-slide>
-            <div class="carousel-placeholder">Sensor concept image 2</div>
-          </div>
-          <div class="carousel-slide" data-slide>
-            <div class="carousel-placeholder">Development image 3</div>
+            <img
+              src="/images/projects/nitrogen-tank-holder/fabricationplate1.png"
+              alt="Top plate after fabrication on a workbench"
+            />
+            <div class="carousel-caption">Top Plate After Fabrication</div>
           </div>
 
-          <button class="carousel-arrow previous" type="button" data-previous aria-label="Previous instrumentation image">
+          <div class="carousel-slide" data-slide>
+            <img
+              src="/images/projects/nitrogen-tank-holder/fabricationplate2.png"
+              alt="Bottom plate after fabrication on a workbench"
+            />
+            <div class="carousel-caption">Bottom Plate After Fabrication</div>
+          </div>
+
+          <div class="carousel-slide" data-slide>
+            <div class="carousel-placeholder">
+              Better image of full assembly pending
+            </div>
+          </div>
+
+          <button class="carousel-arrow previous" type="button" data-previous aria-label="Previous fabrication and assembly image">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
           </button>
-          <button class="carousel-arrow next" type="button" data-next aria-label="Next instrumentation image">
+          <button class="carousel-arrow next" type="button" data-next aria-label="Next fabrication and assembly image">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
           </button>
         </div>
@@ -135,6 +213,7 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
         </div>
       </div>
     </section>
+
     <section class="overall-section">
       <div class="overall-heading">
         <span></span>
@@ -145,23 +224,35 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
       <div class="overall-grid">
         <article class="overall-card">
           <h3>Results</h3>
-          <p>Summarize the hardware, operations, and test-readiness outcomes you directly supported without disclosing restricted team information.</p>
+          <p>
+            The final design performed as expected with no performance issues and minimal excess material. The supports 
+            have been used for multiple water flow tests and a hot fire.
+          </p>
         </article>
 
         <article class="overall-card">
           <h3>My Contributions</h3>
-          <p>Describe your specific responsibilities in test operations, hardware integration, fittings, procedures, and instrumentation development, distinguishing individual work from team-wide efforts.</p>
+          <p>
+            Overall, my specific contributions involved idea 
+            brainstorming, obtaining measurements, selecting and ordering materials, 
+            machining the materials, troubleshooting the design, and installing the tank 
+            and supports onto the stand.
+          </p>
         </article>
 
         <article class="overall-card">
           <h3>Lessons Learned</h3>
-          <p>Discuss the lessons gained in safety, test readiness, hardware integration, documentation, communication, and troubleshooting on a complex experimental system.</p>
+          <p>
+            From this project, I developed a better understanding of  
+            how to select nuts and bolts, and I learned to always double-check not only my own work 
+            but my peers' work as well. In the future, I will also 
+            reduce material thickness, as the original thickness choice was an excessive 1/2 in.
+          </p>
         </article>
       </div>
     </section>
   </div>
 </ProjectLayout>
-
 
 <style>
   .case-study-page {
@@ -217,16 +308,31 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 
   .context-icon-slot {
     display: grid;
-    width: 94px;
+    width: 160px;
     aspect-ratio: 1;
     place-items: center;
     justify-self: center;
-    border: 2px dashed #78aee8;
+    border: 8px solid #78aee8;
     border-radius: 14px;
     color: var(--accent);
     font-size: 0.78rem;
     font-weight: 850;
     letter-spacing: 0.12em;
+  }
+
+  .context-icon-slot img {
+    width: 148px;
+    height: 148px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .context-card > .context-icon-slot:first-child {
+    transform: translateX(28px);
+  }
+
+  .context-card > .context-icon-slot:last-child {
+    transform: translateX(-28px);
   }
 
   .split-card {
@@ -242,6 +348,7 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
   }
 
   .section-copy {
+    align-self: start;
     padding: 18px 14px;
   }
 
@@ -291,6 +398,14 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
     height: 100%;
     object-fit: contain;
     background: #ffffff;
+  }
+
+  .carousel-slide img.rotate-clockwise {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    transform: rotate(90deg);
   }
 
   .carousel-placeholder {
@@ -483,7 +598,6 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
     }
   }
 </style>
-
 
 <script>
   document.querySelectorAll<HTMLElement>("[data-carousel]").forEach((carousel) => {

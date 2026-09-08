@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Résumé | William Schibler">
+
+  <section class="page-hero info-page-hero">
+    <div class="page-container">
+      <p class="eyebrow">Résumé</p>
+      <h1>Education, Experience, and Technical Capabilities.</h1>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="resume-layout">
+
+      <div>
+        <p class="eyebrow">Résumé PDF</p>
+        <h2>William T. Schibler</h2>
+
+        <p>
+          View or download my current résumé.
+        </p>
+
+        <div class="button-row">
+          <a class="button primary" href="/files/William-Schibler-Resume.pdf" target="_blank" rel="noopener noreferrer">View Résumé</a>
+          <a class="button secondary" href="/files/William-Schibler-Resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+
+      <div class="resume-preview" style="display: block; padding: 18px; min-height: 0;">
+        <iframe
+          src="/files/William-Schibler-Resume.pdf#view=FitH"
+          title="William T. Schibler Résumé"
+          style="display: block; width: 100%; height: 620px; border: 0;"
+        ></iframe>
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>

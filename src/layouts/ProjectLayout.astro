@@ -1,33 +1,103 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-
-interface Props {
-    title: string;
-    category: string;
-    summary: string;
-    tools: string[];
-}
-
-const { title, category, summary, tools } = Astro.props;
+interface Props { title: string; category: string; status: "Completed" | "Improving" | "Work in progress"; summary: string; tools: string[]; team?: string; }
+const { title, category, status, summary, tools, team } = Astro.props;
 ---
-
-<BaseLayout
-    title={`${title} | William Schibler`}
-    description={summary}
->
-    <section class="page-hero">
-        <div class="page-container">
-            <p class="eyebrow">{category}</p>
-            <h1>{title}</h1>
-            <p class="page-intro">{summary}</p>
-
-            <div class="tag-list" aria-label="Project tools">
-                {tools.map((tool) => <span class="tag">{tool}</span>)}
-            </div>
-        </div>
-    </section>
-
-    <article class="section article-content">
-        <slot />
-    </article>
+<BaseLayout title={`${title} | William Schibler`} description={summary}>
+  <section class="project-hero"><div class="page-container">
+    <div class="hero-meta"><p class="eyebrow">{category}</p><span class:list={["status", {done: status === "Completed", improving: status === "Improving", wip: status === "Work in progress"}]}>{status}</span></div>
+    <h1>{title}</h1><p class="page-intro">{summary}</p>
+    <div class="facts"><div><span>Tools</span><strong>{tools.join(" · ")}</strong></div>{team && <div><span>Team</span><strong>{team}</strong></div>}</div>
+  </div></section>
+  <article class="section project-article"><slot /></article>
 </BaseLayout>
+<script>
+  document.addEventListener(
+    "click",
+    (event) => {
+      const target = event.target as HTMLElement;
+
+      const button = target.closest<HTMLButtonElement>(
+        "[data-previous], [data-next]"
+      );
+
+      if (!button) return;
+
+      const carousel = button.closest<HTMLElement>("[data-carousel]");
+
+      if (!carousel) return;
+
+      /* Prevent the older page-specific carousel click handler from also firing */
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      if (carousel.dataset.animating === "true") return;
+
+      const slides = Array.from(
+        carousel.querySelectorAll<HTMLElement>("[data-slide]")
+      );
+
+      const dots = Array.from(
+        carousel.querySelectorAll<HTMLElement>("[data-dot]")
+      );
+
+      if (slides.length < 2) return;
+
+      const currentIndex = slides.findIndex((slide) =>
+        slide.classList.contains("is-active")
+      );
+
+      if (currentIndex === -1) return;
+
+      const direction = button.hasAttribute("data-next") ? 1 : -1;
+
+      const nextIndex =
+        (currentIndex + direction + slides.length) % slides.length;
+
+      const currentSlide = slides[currentIndex];
+      const nextSlide = slides[nextIndex];
+
+      const enteringClass =
+        direction === 1
+          ? "is-entering-from-right"
+          : "is-entering-from-left";
+
+      const leavingClass =
+        direction === 1
+          ? "is-leaving-to-left"
+          : "is-leaving-to-right";
+
+      carousel.dataset.animating = "true";
+
+      nextSlide.classList.add("is-active", enteringClass);
+      nextSlide.setAttribute("aria-hidden", "false");
+
+      currentSlide.classList.add(leavingClass);
+
+      let finished = false;
+
+      const finishTransition = () => {
+        if (finished) return;
+        finished = true;
+
+        currentSlide.classList.remove("is-active", leavingClass);
+        currentSlide.setAttribute("aria-hidden", "true");
+
+        nextSlide.classList.remove(enteringClass);
+
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("is-active", dotIndex === nextIndex);
+        });
+
+        carousel.dataset.animating = "false";
+      };
+
+      nextSlide.addEventListener("animationend", finishTransition, {
+        once: true,
+      });
+
+      window.setTimeout(finishTransition, 500);
+    },
+    true
+  );
+</script>

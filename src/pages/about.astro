@@ -3,37 +3,770 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="About | William Schibler">
-    <section class="page-hero">
-        <div class="page-container">
-            <p class="eyebrow">About</p>
-            <h1>Engineering through analysis, design, and testing.</h1>
-            <p class="page-intro">
-                I am a Mechanical Engineering undergraduate at Northeastern
-                University with an Aerospace Engineering minor.
-            </p>
+
+  <section class="page-hero info-page-hero">
+    <div class="page-container">
+      <p class="eyebrow">About</p>
+      <h1>Engineering through Analysis, Design, and Testing.</h1>
+    </div>
+  </section>
+
+  <section class="section two-column professional-bio">
+
+    <div class="bio-media">
+
+      <div class="bio-photo-frame">
+        <img
+          src="/images/headshot.jpg"
+          alt="Professional portrait of William Schibler"
+        />
+      </div>
+      <p class="bio-name">William T. Schibler</p>
+    </div>
+
+    <div class="bio-copy">
+      <h2>My Engineering Story</h2>
+
+      <p>
+        I chose to study mechanical and aerospace engineering because I wanted a
+        broad but rigorous technical foundation for my career. Aerospace systems
+        bring together structures, fluids, propulsion, controls, electronics,
+        manufacturing, and many other disciplines, making systems-level thinking
+        essential. I believe that understanding how these disciplines interact
+        makes an engineer more effective when collaborating across disciplines and
+        identifying project design constraints. For that reason, I have always
+        wanted my engineering education to extend beyond the confines of a single
+        discipline.
+      </p>
+
+      <p>
+        I am capable of adapting to different types of engineering work, but I
+        particularly enjoy projects that are hands-on and allow me to take
+        ownership of the creative process, whether that be with a team or by
+        myself. Further, I also appreciate roles that foster systems-level
+        thinking and require interdisciplinary collaboration; they help shape the
+        mind to envision and understand projects that operate on a larger scale.
+      </p>
+
+      <p>
+        Ultimately, I want to apply my engineering skills to meaningful projects
+        that help people. Whether that be working on satellites to collect global
+        data, improving combustion systems for efficiency, optimizing rockets for
+        flight, or anything else I do in the future, I want my endeavors to serve
+        a greater purpose than just myself.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="section section-border">
+    <div class="section-heading">
+      <p class="eyebrow">Education</p>
+    </div>
+
+    <div class="education">
+      <div class="education-logo">
+        <img
+          src="/images/northeastern-monogram.png"
+          alt="Northeastern University monogram"
+        />
+      </div>
+
+      <div>
+        <h2>Northeastern University</h2>
+        <h3>B.S. Mechanical Engineering</h3>
+        <p>Aerospace Engineering minor · Expected May 2028</p>
+      </div>
+
+      <div>
+        <strong>GPA: 3.93</strong>
+        <p><strong>Extracurriculars:</strong> Tau Beta Pi · ExClub President</p>
+        <p><strong>Awards:</strong> Dean’s List · ASME Student of the Week</p>
+      </div>
+    </div>
+
+ 
+  </section>
+
+  <section class="section">
+  <div class="section-heading engineering-interests-heading">
+    <p class="eyebrow">Engineering Interests</p>
+  </div>
+
+  <div class="interest-grid">
+
+    <details class="capability-card interest-card" name="engineering-interest">
+      <summary class="interest-summary">
+        <div class="capability-card-heading">
+          <div class="capability-icon interest-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" />
+              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.87 12.87 0 0 1 22 2c0 2.72-.78 7.5-6.05 11A22.35 22.35 0 0 1 12 15Z" />
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              <circle cx="16" cy="8" r="1" />
+            </svg>
+          </div>
+
+          <h3>Aerospace Propulsion</h3>
         </div>
-    </section>
 
-    <section class="section article-content">
-        <h2>Background</h2>
-        <p>
-            My interests include propulsion, turbomachinery, computational
-            fluid dynamics, CAD, manufacturing, and experimental testing.
-            I enjoy taking a technical problem from initial calculations
-            through modeling, simulation, fabrication, and evaluation.
+        <p class="interest-teaser">
+          Systems-level propulsion engineering integrating flow, chemistry,
+          cryogenics, and spacecraft performance.
         </p>
 
-        <h2>What I am building</h2>
+        <span class="interest-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="interest-expanded">
         <p>
-            This portfolio documents the design process behind my projects,
-            including the requirements, calculations, decisions, results,
-            setbacks, and lessons learned—not only the final product.
+          Optimized propulsion for space travel requires an understanding of flow
+          system design/analysis, chemistry, and cryogenics as well as how the
+          propulsion system interacts with the overall spacecraft.
+          In my career, I aim
+          to develop a wide range of skills that allow me to better understand how
+          subsystems interact and how those interactions affect propulsion
+          performance.
+        </p>
+      </div>
+    </details>
+
+
+    <details class="capability-card interest-card" name="engineering-interest">
+      <summary class="interest-summary">
+        <div class="capability-card-heading">
+          <div class="capability-icon interest-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z" />
+            </svg>
+          </div>
+
+          <h3>Fluid Systems and Turbomachinery</h3>
+        </div>
+
+        <p class="interest-teaser">
+          How geometry and component design shape fluid behavior, reliability,
+          and system performance.
         </p>
 
-        <h2>Current focus</h2>
+        <span class="interest-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="interest-expanded">
         <p>
-            My current work emphasizes aerospace propulsion, fluid systems,
-            engineering analysis, and hands-on test and manufacturing experience.
+          Understanding how fluid properties change as they move through a system,
+          and how geometry and component design influence those changes, is
+          essential to effective fluid-system and turbomachinery design. These
+          systems must operate reliably, efficiently, and repeatably, in varying
+          conditions. I enjoy understanding how geometry and design decisions in
+          machinery allow engineers to create the desired outlet conditions in a
+          system.
         </p>
-    </section>
+      </div>
+    </details>
+
+
+    <details class="capability-card interest-card" name="engineering-interest">
+      <summary class="interest-summary">
+        <div class="capability-card-heading">
+          <div class="capability-icon interest-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M15.5 3.5 20.5 8.5 8.5 20.5 3.5 15.5 15.5 3.5Z" />
+              <path d="m13.5 5.5 2 2" />
+              <path d="m11.5 7.5 1.5 1.5" />
+              <path d="m9.5 9.5 2 2" />
+              <path d="m7.5 11.5 1.5 1.5" />
+            </svg>
+          </div>
+
+          <h3>Design, Manufacturing,<br />and Testing</h3>
+        </div>
+
+        <p class="interest-teaser">
+          Turning concepts into physical prototypes through hands-on design,
+          manufacturing, testing, and iteration.
+        </p>
+
+        <span class="interest-chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="interest-expanded">
+        <p>
+          Being able to turn a concept into a physical, testable prototype is an
+          invaluable skill in engineering. It allows creative engineers to test
+          out and iterate their designs and ideas. I always seek hands-on work and
+          am cultivating the skills necessary to carry a prototype through the
+          full process from design and manufacturing to testing and iteration.
+        </p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+  <section class="section section-border">
+    <div class="section-heading leadership-service-heading">
+      <p class="eyebrow">Leadership and Service</p>
+    </div>
+
+    <div class="leadership-list">
+
+      <article class="leadership-card leadership-card--makerspace">
+        <div class="leadership-visual" aria-hidden="true">
+          <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path class="icon-main" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
+            <circle class="icon-accent-fill" cx="5.15" cy="18.85" r="1.05" />
+          </svg>
+        </div>
+
+        <div class="leadership-content">
+          <div class="leadership-meta">
+            <p class="eyebrow">Makerspace Club NU</p>
+            <span>February 2025 – April 2025</span>
+          </div>
+          <h2>Founder and President</h2>
+
+          <details class="leadership-details">
+            <summary>View details</summary>
+            <div class="leadership-details-content">
+              <p>
+                At Northeastern University's Oakland campus, I co-founded a club to
+                promote the newly established makerspaces. The club's purpose was to
+                raise student awareness of the available resources and encourage
+                students from all majors to explore their creativity. During one
+                semester, our team established the club, organized seven events in
+                twelve weeks, and received an award for hosting the best club event
+                of the year, as voted on by the Student Involvement staff.
+              </p>
+              <ul>
+                <li>
+                  Hosted events featuring activities created with makerspace equipment
+                  such as 3D printers, laser cutters, and vinyl cutters.
+                </li>
+                <li>
+                  Coordinated communication with club advisors, sponsors, executive
+                  board members, and general club members.
+                </li>
+                <li>
+                  Received recognition for hosting the best club event of the year,
+                  as voted on by the Student Involvement staff.
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="leadership-card leadership-card--mock-trial">
+        <div class="leadership-visual" aria-hidden="true">
+          <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path class="icon-main" d="M12 3v18" />
+            <path class="icon-main" d="M5 6h14" />
+            <path class="icon-main" d="m5 6-3 7h6L5 6Z" />
+            <path class="icon-main" d="m19 6-3 7h6l-3-7Z" />
+            <path class="icon-accent" d="M8 21h8" />
+          </svg>
+        </div>
+
+        <div class="leadership-content">
+          <div class="leadership-meta">
+            <p class="eyebrow">High School Mock Trial</p>
+            <span>2020 – 2024</span>
+          </div>
+          <h2>Team Captain</h2>
+
+          <details class="leadership-details">
+            <summary>View details</summary>
+            <div class="leadership-details-content">
+              <p>Participated with a team of high school students in mock trial competitions at the distric, regional
+                , and state levels. Competitions required months of preparation and were exectued in courtrooms for lawyers
+                and judges to observe and critique.
+              </p>
+              <ul>
+                <li>Presented cases to Federal Judges in Mock Court</li>
+                <li>State Semifinalist Mock Trial March 2021/24</li>
+                <li>State Championship Mock Trial March 2023</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="leadership-card leadership-card--football">
+        <div class="leadership-visual" aria-hidden="true">
+          <svg
+  class="leadership-icon"
+viewBox="4 4 16 16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <ellipse
+    class="icon-main"
+    cx="12"
+    cy="12"
+    rx="8.2"
+    ry="4.6"
+    transform="rotate(-45 12 12)"
+    stroke-width="1.8"
+  />
+
+  <path
+    class="icon-main"
+    d="M9.4 14.6 14.6 9.4"
+    stroke-width="1.8"
+  />
+
+  <path
+    class="icon-accent"
+    d="m10.2 12.9 1.2 1.2
+       M11.5 11.6l1.2 1.2
+       M12.8 10.3l1.2 1.2"
+    stroke-width="1.8"
+  />
+</svg>
+        </div>
+
+        <div class="leadership-content">
+          <div class="leadership-meta">
+            <p class="eyebrow">Jesuit Varsity Football</p>
+            <span>December 2020 – November 2023</span>
+          </div>
+          <h2>Team Captain</h2>
+
+          <details class="leadership-details">
+            <summary>View details</summary>
+            <div class="leadership-details-content">
+              <p> Trained and practiced with a varying roster of players in the most competitve High School Football league in Louisiana.</p>
+              <ul>
+                <li>Led a team of +100 students from 8th – 12th grade, on and off the football field.</li>
+                <li>Built better connections with the team than any player in +15 years, as described by the high school’s athletic director.</li>
+                <li>Earned multiple awards for academic and athletic achievement, as well as sportsmanship, over +200 athletes.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="leadership-card leadership-card--camp-smile">
+        <div class="leadership-visual" aria-hidden="true">
+          <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle class="icon-main" cx="12" cy="12" r="9" />
+            <path class="icon-accent" d="M8 14s1.5 2 4 2 4-2 4-2" />
+            <circle class="icon-main" cx="9" cy="9" r=".6" />
+            <circle class="icon-main" cx="15" cy="9" r=".6" />
+          </svg>
+        </div>
+
+        <div class="leadership-content">
+          <div class="leadership-meta">
+            <p class="eyebrow">Camp Smile</p>
+            <span>July 2023 – 2026</span>
+          </div>
+          <h2>Counselor</h2>
+
+          <details class="leadership-details">
+            <summary>View details</summary>
+            <div class="leadership-details-content">
+              <p>The camp is a month-long overnight camp that is divided into four separate weeks based on age group. 
+                As a counselor, you are paired with a camper for a week who can have a mental and/or physical disability. 
+                It is the counselor's job to guide their camper through daily activities and help them
+                 have the best week of their summer.</p>
+              <ul>
+                <li>Cared for campers from ages 12 to +30 with disabilities such as cerebral palsy, autism, and down syndrome.</li>
+                <li>Recognized by staff for exemplary leadership, determination, and compassion.</li>
+                <li>Trusted by camp staff to speak about the camp on local news television.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="leadership-card leadership-card--responsibility">
+        <div class="leadership-visual" aria-hidden="true">
+          <svg class="leadership-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path class="icon-main" d="M3 11.5 12 4l9 7.5" />
+            <path class="icon-main" d="M5 10.5V21h14V10.5" />
+            <path class="icon-accent" d="M9 21v-6h6v6" />
+          </svg>
+        </div>
+
+        <div class="leadership-content">
+          <div class="leadership-meta">
+            <p class="eyebrow">Responsibility House</p>
+            <span>November 2023 – 2025</span>
+          </div>
+          <h2>Organizer and Collector</h2>
+
+          <details class="leadership-details">
+            <summary>View details</summary>
+            <div class="leadership-details-content">
+              <p> A charity dedicated to housing the homeless; however, when they are housed, sometimes they lack 
+                furniture, bedding, and various other household ammenities and/or supplies. My work for the charity 
+                has been to obtain household items and furniture donations to give to people housed or serviced by the charity.</p>
+              <ul>
+                <li>Organized and ran a household item collection drive for local charity.</li>
+                <li>Assisted in collecting furniture, bedding, and housing items from Tulane college students to donate to newly housed people; collected over $40,000 in items.</li>
+                <li>Delivered all donations across the city of New Orleans and surrounding areas to people in need.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
 </BaseLayout>
+
+<style>
+  .engineering-interests-heading {
+    margin-bottom: 30px;
+  }
+.interest-grid {
+  align-items: start;
+}
+  /* Engineering Interests dropdown behavior */
+  .interest-summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .interest-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .interest-summary::marker {
+    content: "";
+  }
+
+  .interest-chevron {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 24px 8px 0 auto;
+    border-right: 4px solid rgba(74, 174, 255, 0.95);
+    border-bottom: 4px solid rgba(74, 174, 255, 0.95);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  .interest-card[open] .interest-chevron {
+    transform: rotate(225deg);
+  }
+
+  .interest-expanded {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(74, 174, 255, 0.25);
+  }
+
+  .interest-card {
+    min-height: 300px;
+    padding: 28px;
+  }
+
+  .interest-card .capability-card-heading {
+    margin-bottom: 28px;
+  }
+
+  .interest-card h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    text-transform: none;
+  }
+
+  .interest-card p {
+    margin: 0;
+    color: #ced9e5;
+    font-size: 1.35rem;
+    line-height: 1.65;
+  }
+
+.interest-icon {
+  flex: 0 0 98px;
+  width: 98px;
+  height: 98px;
+  border: 3px solid rgba(74, 174, 255, 0.9);
+  border-radius: 50%;
+}
+
+.interest-icon svg {
+  width: 70px;
+  height: 70px;
+}
+
+  @media (max-width: 540px) {
+    .interest-card {
+      min-height: auto;
+      padding: 24px;
+    }
+  }
+
+
+  /* =========================================================
+     ABOUT — LEADERSHIP AND SERVICE
+     Mirrors the Experience-page card layout.
+     ========================================================= */
+
+  .leadership-service-heading {
+    margin-bottom: 30px;
+  }
+
+  .leadership-list {
+    --leadership-gap: 24px;
+    --leadership-panel-height: 140px;
+    display: grid;
+    gap: var(--leadership-gap);
+  }
+
+  .leadership-card {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+  }
+
+  .leadership-visual {
+    display: grid;
+    height: var(--leadership-panel-height);
+    place-items: center;
+    padding: 18px 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    background: linear-gradient(145deg, var(--panel-start), var(--panel-end));
+    box-shadow:
+      0 12px 26px rgba(8, 31, 57, 0.16),
+      0 3px 8px rgba(8, 31, 57, 0.08);
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .leadership-icon {
+    width: 56px;
+    height: 56px;
+    overflow: visible;
+  }
+
+  .leadership-icon path,
+  .leadership-icon circle {
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .leadership-icon .icon-main {
+    stroke: #ffffff;
+  }
+
+  .leadership-icon .icon-accent {
+    stroke: var(--icon-accent);
+  }
+
+  .leadership-icon .icon-accent-fill {
+    fill: var(--icon-accent);
+    stroke: none;
+  }
+
+  .leadership-content {
+    min-width: 0;
+    min-height: var(--leadership-panel-height);
+    padding: 18px 24px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow:
+      0 12px 28px rgba(8, 31, 57, 0.11),
+      0 3px 8px rgba(8, 31, 57, 0.05);
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .leadership-card:hover .leadership-visual,
+  .leadership-card:hover .leadership-content {
+    transform: translateY(-2px);
+  }
+
+  .leadership-card:hover .leadership-content {
+    border-color: rgba(31, 95, 174, 0.58);
+    box-shadow:
+      0 18px 38px rgba(8, 31, 57, 0.15),
+      0 5px 12px rgba(8, 31, 57, 0.07);
+  }
+
+  .leadership-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 6px;
+  }
+
+  .leadership-meta .eyebrow {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .leadership-meta span {
+    color: var(--muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .leadership-content h2 {
+    margin: 0;
+    font-size: 1.55rem;
+    line-height: 1.2;
+  }
+
+  .leadership-details {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+
+  .leadership-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 820;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .leadership-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .leadership-details summary::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background:
+      linear-gradient(var(--accent), var(--accent)) center / 12px 3px no-repeat,
+      linear-gradient(var(--accent), var(--accent)) center / 3px 12px no-repeat;
+  }
+
+  .leadership-details[open] summary::after {
+    background:
+      linear-gradient(var(--accent), var(--accent)) center / 12px 2px no-repeat;
+  }
+
+  .leadership-details-content {
+    padding-top: 16px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .leadership-details-content p {
+    text-align: justify;
+  }
+
+  .leadership-details-content > :first-child {
+    margin-top: 0;
+  }
+
+  .leadership-details-content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .leadership-card--makerspace {
+    --panel-start: #12489f;
+    --panel-end: #2371dd;
+    --icon-accent: #ffd166;
+  }
+
+  .leadership-card--mock-trial {
+    --panel-start: #17355f;
+    --panel-end: #285c9f;
+    --icon-accent: #8fd8ff;
+  }
+
+  .leadership-card--football {
+    --panel-start: #0f3567;
+    --panel-end: #1b579d;
+    --icon-accent: #8fe3ff;
+  }
+
+  .leadership-card--camp-smile {
+    --panel-start: #183d73;
+    --panel-end: #2f6fb3;
+    --icon-accent: #9edcff;
+  }
+
+  .leadership-card--responsibility {
+    --panel-start: #24396d;
+    --panel-end: #385a9d;
+    --icon-accent: #9edcff;
+  }
+
+  @media (max-width: 760px) {
+    .leadership-card {
+      grid-template-columns: 1fr;
+    }
+
+    .leadership-visual {
+      height: 104px;
+      padding: 18px;
+    }
+
+    .leadership-icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    .leadership-content {
+      min-height: 0;
+      padding: 24px;
+    }
+
+    .leadership-meta {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .leadership-card:hover .leadership-visual,
+    .leadership-card:hover .leadership-content {
+      transform: none;
+    }
+  }
+
+</style>
